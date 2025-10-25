@@ -133,11 +133,11 @@ if model_file.exists() and meta_file.exists():
             idx += 1
 
     # Example button to prefill
-    if st.button("Use example values"):
-        for k, v in session_defaults.items():
-            if k in expected:
-                inputs[k] = v
-        st.experimental_rerun()
+    # if st.button("Use example values"):
+    #     for k, v in session_defaults.items():
+    #         if k in expected:
+    #             inputs[k] = v
+    #     st.experimental_rerun()
 
     # Predict
     st.markdown("---")
