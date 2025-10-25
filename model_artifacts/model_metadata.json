@@ -1,0 +1,31 @@
+{
+  "target": "retail_inr_per_t",
+  "date_trained": "2025-10-25T17:00:46.491122+00:00",
+  "expected_inputs": [
+    "world_cpo_price_usd_per_t",
+    "usd_inr",
+    "freight_usd_per_t",
+    "brent_usd",
+    "soy_spread_usd_per_t",
+    "sunflower_spread_usd_per_t",
+    "tariff_advalorem_pct",
+    "tariff_specific_inr_per_t",
+    "effective_tariff_rate_pct",
+    "cif_usd_per_t",
+    "cif_inr_per_t",
+    "landed_inr_per_t",
+    "domestic_supply_ton",
+    "consumption_ton",
+    "imports_ton",
+    "nat_mature_ha",
+    "nat_immature_ha",
+    "nat_ffb_prod_ton",
+    "nat_cpo_prod_ton",
+    "nat_subsidy_intensity",
+    "nat_rain_anom",
+    "nat_heat_anom",
+    "year",
+    "month"
+  ],
+  "notes": "GradientBoostingRegressor in sklearn Pipeline with median imputation. Provide any subset of features at inference time; missing values are imputed. Key direct inputs you can enter: effective_tariff_rate_pct, tariff_advalorem_pct, tariff_specific_inr_per_t, usd_inr, world_cpo_price_usd_per_t; plus optional crop context like nat_mature_ha, nat_cpo_prod_ton, etc."
+}
